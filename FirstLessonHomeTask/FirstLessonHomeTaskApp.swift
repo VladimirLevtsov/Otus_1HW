@@ -11,7 +11,8 @@ import SwiftUI
 struct FirstLessonHomeTaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(TabRouter())
         }
     }
 }
